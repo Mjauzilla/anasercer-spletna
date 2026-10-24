@@ -326,3 +326,7 @@ p{margin:0 0 16px}
 .logo span{color:inherit}
 .logo .sh i{color:var(--amber)}
 .ftag{letter-spacing:.165em;margin-right:-.165em}
+:root{--edge:max(var(--gutter),calc((100vw - var(--wrap)) / 2 + var(--gutter)))}
+.site-header>.wrap{max-width:var(--wrap);padding-left:var(--gutter);padding-right:var(--gutter)}
+.ref blockquote{font-family:'Gloock',Georgia,serif;font-style:normal;font-size:24px;line-height:1.4}
+@media (max-width:760px){.ref blockquote{font-size:21px}}

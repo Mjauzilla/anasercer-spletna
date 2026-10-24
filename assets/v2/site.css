@@ -317,3 +317,12 @@ p{margin:0 0 16px}
 .about-photo img{aspect-ratio:1/1;object-position:50% 18%}
 @media (max-width:760px){.ref blockquote{font-size:23px}}
 .about-photo img{height:auto;display:block}
+.logo{font-weight:700;font-size:21px;letter-spacing:-.04em;line-height:1;text-transform:none}
+.logo .sh{position:relative;display:inline-block}
+.logo .sh i{position:absolute;left:50%;top:-.06em;transform:translateX(-50%);font-style:normal;color:var(--amber);line-height:1}
+.flogo{display:inline-flex;flex-direction:column;align-items:flex-start;gap:6px}
+.flogo .logo{font-size:30px;color:var(--cream)}
+.ftag{font-family:var(--mono);font-size:10.4px;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);white-space:nowrap}
+.logo span{color:inherit}
+.logo .sh i{color:var(--amber)}
+.ftag{letter-spacing:.165em;margin-right:-.165em}

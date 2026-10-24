@@ -352,3 +352,5 @@ p{margin:0 0 16px}
 .testi .label{color:var(--mahogany)}
 .faq summary{padding-left:0;padding-right:0}
 .faq .ans{padding-left:0;padding-right:0}
+.vt-grid{grid-template-columns:minmax(220px,280px) minmax(0,560px);gap:64px}
+@media (max-width:760px){.vt-grid{grid-template-columns:1fr}.video-card.vert{max-width:280px}}

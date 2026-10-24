@@ -330,3 +330,5 @@ p{margin:0 0 16px}
 .site-header>.wrap{max-width:var(--wrap);padding-left:var(--gutter);padding-right:var(--gutter)}
 .ref blockquote{font-family:'Gloock',Georgia,serif;font-style:normal;font-size:24px;line-height:1.4}
 @media (max-width:760px){.ref blockquote{font-size:21px}}
+.logo .sh{position:relative;display:inline-block;line-height:1}
+.logo .sh i{position:absolute;left:0;top:0;line-height:1;transform:none;font-size:1em;color:var(--amber);clip-path:inset(-.6em 0 87% 0)}

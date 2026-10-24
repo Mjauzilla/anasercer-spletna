@@ -10,3 +10,4 @@
   var v=document.querySelector('.hero video');
   if(v&&window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}
 })();
+document.querySelectorAll('.video-card .vplay').forEach(function(b){b.addEventListener('click',function(){var c=b.closest('.video-card'),v=c.querySelector('video');c.classList.add('playing');v.controls=true;v.play();});});

@@ -32,7 +32,7 @@ a{color:inherit}
 .s-mahog .label{color:var(--amber)}
 .s-mahog .muted{color:var(--silver)}
 .s-amber{background:var(--amber);color:var(--mahogany)}
-.pad{padding:110px 0}
+.pad{padding-top:110px;padding-bottom:110px}
 .pad-s{padding-top:70px;padding-bottom:70px}
 h1,h2,h3{margin:0;letter-spacing:-.035em;line-height:1.05;font-weight:600}
 .h-xl{font-weight:800;font-size:clamp(42px,5.6vw,80px);line-height:1.02;letter-spacing:-.045em}
@@ -305,3 +305,15 @@ p{margin:0 0 16px}
 .site-header>.wrap{max-width:none;padding-left:var(--edge);padding-right:var(--edge)}
 .rec{right:var(--edge)}
 .timeline{left:var(--edge);right:var(--edge)}
+.wrap.narrow{max-width:var(--wrap)}
+.wrap.narrow>*{max-width:1000px}
+.ref blockquote{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:27px;line-height:1.3;letter-spacing:0}
+.ref a{font-family:var(--sans);font-size:14px;font-weight:500}
+.logos-band{background:var(--spruce);color:var(--cream)}
+.logos-band .logos{border-top:0;padding:56px 0 64px}
+.logos-band .logos .label{color:var(--amber)}
+.logos-band .logo-mq .lg{opacity:1}
+.about-photo{max-width:440px}
+.about-photo img{aspect-ratio:1/1;object-position:50% 18%}
+@media (max-width:760px){.ref blockquote{font-size:23px}}
+.about-photo img{height:auto;display:block}

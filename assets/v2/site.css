@@ -350,3 +350,5 @@ p{margin:0 0 16px}
 .testi .muted{color:var(--ink-2)}
 .testi .quote em{color:var(--mahogany);background:linear-gradient(transparent 58%,var(--amber) 58%,var(--amber) 92%,transparent 92%);padding:0 .08em}
 .testi .label{color:var(--mahogany)}
+.faq summary{padding-left:0;padding-right:0}
+.faq .ans{padding-left:0;padding-right:0}

@@ -342,3 +342,9 @@ p{margin:0 0 16px}
 .logos-band .logos{padding:44px 0}
 .ref blockquote{font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300;font-size:25px;line-height:1.42}
 @media (max-width:760px){.ref blockquote{font-size:22px}}
+.testi .ref{border-top-color:rgba(60,21,24,.25)}
+.testi .ref .who{color:var(--ink-2)}
+.testi .ref a{color:var(--mahogany);text-decoration:underline;text-decoration-color:var(--amber);text-decoration-thickness:2px;text-underline-offset:4px}
+.testi .quote em{color:var(--gold)}
+.testi .label{color:var(--gold)}
+.testi .muted{color:var(--ink-2)}

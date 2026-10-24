@@ -354,3 +354,21 @@ p{margin:0 0 16px}
 .faq .ans{padding-left:0;padding-right:0}
 .vt-grid{grid-template-columns:minmax(220px,280px) minmax(0,560px);gap:64px}
 @media (max-width:760px){.vt-grid{grid-template-columns:1fr}.video-card.vert{max-width:280px}}
+.why-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.why-tab{border:1.5px solid rgba(243,237,226,.35);background:transparent;color:var(--cream);border-radius:999px;padding:11px 20px;font:600 15px var(--sans);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.why-tab:hover{border-color:var(--cream)}
+.why-tab[aria-selected="true"]{background:var(--amber);border-color:var(--amber);color:var(--mahogany)}
+.why-tab:focus-visible{outline:2px solid var(--cream);outline-offset:3px}
+.why-panel{display:grid;gap:14px;grid-template-columns:repeat(5,minmax(0,1fr))}
+.why-panel[hidden]{display:none}
+.why-item{background:var(--spruce-d);border:1px solid rgba(243,237,226,.08);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0;animation:whyrise .4s ease both}
+.why-item:nth-child(2){animation-delay:50ms}.why-item:nth-child(3){animation-delay:100ms}.why-item:nth-child(4){animation-delay:150ms}.why-item:nth-child(5){animation-delay:200ms}
+.why-ic{width:46px;height:46px;border-radius:12px;background:var(--amber);color:var(--mahogany);display:flex;align-items:center;justify-content:center}
+.why-ic svg{width:24px;height:24px;stroke-width:1.75}
+.why-item h3{font-size:18px;letter-spacing:-.015em;line-height:1.25;margin:0;font-weight:700}
+.why-item p{margin:0;font-size:15px;color:#cfd6cc;line-height:1.5}
+@media (max-width:1100px){.why-panel{grid-template-columns:repeat(6,minmax(0,1fr))}.why-item:nth-child(-n+3){grid-column:span 2}.why-item:nth-child(n+4){grid-column:span 3}}
+@media (max-width:720px){.why-panel{grid-template-columns:repeat(2,minmax(0,1fr))}.why-item:nth-child(n){grid-column:span 1}.why-item:first-child{grid-column:span 2}}
+@media (max-width:440px){.why-panel{grid-template-columns:1fr}.why-item:nth-child(n){grid-column:auto}}
+@keyframes whyrise{from{opacity:.001;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.why-item{animation:none}}

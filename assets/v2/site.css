@@ -296,3 +296,8 @@ p{margin:0 0 16px}
 .logo-mq .lg-t{font-family:var(--sans);font-size:22px;font-weight:500;letter-spacing:-.01em;color:var(--cream)}
 .logo-mq .lg-t:only-child{font-weight:700;letter-spacing:.14em;font-size:17px}
 @media (max-width:760px){.logo-mq .lg{padding:0 28px;transform:scale(.85)}}
+.results-band{background:var(--spruce);color:var(--cream);padding:110px 0}
+.results-band .stat-n{color:var(--amber)}
+.results-band .label{color:var(--amber)}
+.results-band .stat .mono{color:var(--silver)}
+@media (max-width:760px){.results-band{padding:72px 0}}

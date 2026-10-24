@@ -286,3 +286,13 @@ p{margin:0 0 16px}
 .vmute:hover{transform:scale(1.05)}
 .vmute[aria-pressed="true"]{background:var(--cream)}
 @media (max-width:760px){.vt-grid{grid-template-columns:1fr;gap:36px}.video-card.vert{max-width:380px;width:100%;margin:0 auto}}
+.logos{border-top:1px solid #5A2A2E;padding:40px 0 56px}
+.logos .label{color:var(--silver);margin-bottom:28px}
+.logo-mq{padding:0}
+.logo-mq .marquee-track{animation-duration:40s}
+.logo-mq .mq-g{display:flex;align-items:center}
+.logo-mq .lg{display:inline-flex;align-items:center;gap:14px;padding:0 44px;opacity:.85;height:60px}
+.logo-mq .lg img{display:block;width:auto}
+.logo-mq .lg-t{font-family:var(--sans);font-size:22px;font-weight:500;letter-spacing:-.01em;color:var(--cream)}
+.logo-mq .lg-t:only-child{font-weight:700;letter-spacing:.14em;font-size:17px}
+@media (max-width:760px){.logo-mq .lg{padding:0 28px;transform:scale(.85)}}

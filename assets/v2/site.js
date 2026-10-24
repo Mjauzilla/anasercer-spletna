@@ -11,6 +11,8 @@
   if(v&&window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}
 })();
 document.querySelectorAll('.video-card .vmute').forEach(function(b){var v=b.closest('.video-card').querySelector('video');
-v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});
+v.muted=true;v.setAttribute('muted','');var go=function(){if(v.paused&&v.muted){var p=v.play();if(p&&p.catch)p.catch(function(){});}};go();
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)go();});},{threshold:.25}).observe(v);}
+['scroll','touchstart','click'].forEach(function(ev){window.addEventListener(ev,go,{passive:true,once:true});});
 b.addEventListener('click',function(){v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play();}
 b.setAttribute('aria-pressed',String(!v.muted));b.querySelector('.ic').textContent=v.muted?'🔇':'🔊';b.querySelector('.tx').textContent=v.muted?b.dataset.off:b.dataset.on;});});

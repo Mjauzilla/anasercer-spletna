@@ -229,7 +229,7 @@ p{margin:0 0 16px}
 
 /* footer */
 .site-footer{background:var(--spruce);color:var(--cream)}
-.footer-cta{padding:120px 0 40px}
+.footer-cta{padding-top:120px;padding-bottom:40px}
 .footer-big{font-weight:800;font-size:clamp(56px,10vw,150px);line-height:.9;letter-spacing:-.05em;margin:0}
 .footer-big span{color:var(--amber)}
 .footer-row{margin-top:48px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
@@ -332,3 +332,11 @@ p{margin:0 0 16px}
 @media (max-width:760px){.ref blockquote{font-size:21px}}
 .logo .sh{position:relative;display:inline-block;line-height:1}
 .logo .sh i{position:absolute;left:0;top:0;line-height:1;transform:none;font-size:1em;color:var(--amber);clip-path:inset(-.6em 0 87% 0)}
+.site-header{position:sticky;top:0;z-index:60;transition:background .3s ease,box-shadow .3s ease}
+.has-hero .site-header{position:fixed;top:0;left:0;right:0}
+.site-header.scrolled{background:rgba(39,64,41,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.site-header.scrolled .wrap{padding-top:12px;padding-bottom:12px}
+.site-header .wrap{transition:padding .3s ease}
+.wrap.narrow>.faq{max-width:none}
+.footer-big{font-size:clamp(44px,6.4vw,96px);line-height:.95;letter-spacing:-.045em}
+.logos-band .logos{padding:44px 0}

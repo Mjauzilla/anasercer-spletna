@@ -16,3 +16,4 @@ if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.fo
 ['scroll','touchstart','click'].forEach(function(ev){window.addEventListener(ev,go,{passive:true,once:true});});
 b.addEventListener('click',function(){v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play();}
 b.setAttribute('aria-pressed',String(!v.muted));b.querySelector('.ic').textContent=v.muted?'🔇':'🔊';b.querySelector('.tx').textContent=v.muted?b.dataset.off:b.dataset.on;});});
+(function(){var h=document.querySelector('.site-header');if(!h)return;var f=function(){h.classList.toggle('scrolled',window.scrollY>40);};f();window.addEventListener('scroll',f,{passive:true});})();

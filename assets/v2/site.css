@@ -301,3 +301,7 @@ p{margin:0 0 16px}
 .results-band .label{color:var(--amber)}
 .results-band .stat .mono{color:var(--silver)}
 @media (max-width:760px){.results-band{padding:72px 0}}
+:root{--edge:clamp(20px,2.4vw,44px)}
+.site-header>.wrap{max-width:none;padding-left:var(--edge);padding-right:var(--edge)}
+.rec{right:var(--edge)}
+.timeline{left:var(--edge);right:var(--edge)}

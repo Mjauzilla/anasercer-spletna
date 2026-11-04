@@ -8,7 +8,7 @@
   var prog=document.createElement('div');prog.id='prog';document.body.appendChild(prog);
 
   /* glow + tilt cards */
-  var GL='.pain,.stat,.row,.step,.card,.case,.ref,.why-item,.about-photo,.video-card';
+  var GL='.pain,.stat,.row,.step,.card,.case,.ref,.feat,.why-item,.about-photo,.video-card';
   document.querySelectorAll(GL).forEach(function(el){el.classList.add('gl')});
 
   /* stagger delays inside grids */

@@ -16,6 +16,7 @@ RewriteRule ^(.+?)/?$ $1.html [L]
 # redirect /page.html to /page
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteCond %1 !(^|/)index$
+RewriteCond %1 !^google[0-9a-f]+$
 RewriteRule ^ %1 [R=301,L,NE]
 
 <IfModule mod_expires.c>

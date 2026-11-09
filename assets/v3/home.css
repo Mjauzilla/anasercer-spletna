@@ -4,7 +4,8 @@
 /* ---------- field canvases (injected by home.js) ---------- */
 main>section,.site-footer,.results-band{position:relative;isolation:isolate}
 .field{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
-main>section>.wrap,.site-footer>.wrap,.results-band>.wrap,.hero-inner,.timeline,.logos{position:relative;z-index:1}
+main>section>.wrap,.site-footer>.wrap,.results-band>.wrap,.hero-inner,.logos{position:relative;z-index:1}
+.timeline{z-index:1}
 .hero-overlay{z-index:1}.hero-media{z-index:0}
 
 /* ---------- progress ---------- */

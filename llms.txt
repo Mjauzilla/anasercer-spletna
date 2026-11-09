@@ -28,6 +28,14 @@ Ana Šercer je freelancerka za digitalni marketing iz Ljubljane. Malim podjetjem
 - xpate (fintech): −40% cost per acquisition with 3x more monthly leads.
 - Sustainable Bolivia: +60% direct bookings with SEO and video.
 
+## Guides (Slovenian)
+- [Kaj je GEO optimizacija in kako se pojaviti v ChatGPT](https://anasercer.com/si/kaj-je-geo-optimizacija): Kako doseči, da vas ChatGPT, Perplexity in Google AI priporočijo strankam.
+- [Koliko stane digitalni marketing za malo podjetje v Sloveniji (2026)](https://anasercer.com/si/koliko-stane-digitalni-marketing): Zaposlitev, agencija ali freelancer, in realne cene posameznih storitev.
+- [Marketing freelancer ali agencija: kaj se malemu podjetju bolj splača?](https://anasercer.com/si/marketing-freelancer-ali-agencija): Primerjava cene, hitrosti in odgovornosti, ter kdaj je boljša katera izbira.
+- [7 načinov, kako malo podjetje lahko uporablja AI v marketingu](https://anasercer.com/si/ai-v-marketingu-malega-podjetja): Vsebine, vizuali, video, avtomatizacije in analitika, s konkretnimi orodji.
+- [SpinaliS: kako smo v enem dnevu prišli do priporočila v ChatGPT](https://anasercer.com/si/spinalis-priporocilo-v-chatgpt): Študija primera: od nevidnosti do priporočila v ChatGPT v enem dnevu.
+- [Koliko stane spletna stran v Sloveniji (2026)](https://anasercer.com/si/koliko-stane-spletna-stran): Kaj vpliva na ceno, skriti stroški in kaj mora imeti dobra stran.
+
 ## Contact
 - Email: anasercer@gmail.com
 - Phone: +386 68 617 822

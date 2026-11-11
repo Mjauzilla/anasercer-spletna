@@ -216,3 +216,15 @@ main>section>.wrap,.site-footer>.wrap,.results-band>.wrap,.hero-inner,.logos{pos
 .feat.guide .a{margin-top:auto;font-size:22px;color:var(--spruce);transition:transform .3s}
 .feat.guide:hover .a{transform:translateX(8px) rotate(-45deg);color:var(--amber)}
 @media (max-width:560px){.prose{font-size:17px}}
+
+/* ---------- pricing extras ---------- */
+.offer-bar{margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:30px 36px;border-radius:18px;border:1.5px dashed var(--amber);background:rgba(232,93,63,.06);text-align:left;color:var(--mahogany)}
+.offer-bar .mono{color:var(--gold)}
+.offer-bar h3{margin:8px 0 8px;font-size:26px;color:var(--spruce)}
+.offer-bar .ob-price{color:var(--amber)}
+.offer-bar small{font-family:var(--mono);font-size:13px;color:var(--ink-3);font-weight:400}
+.offer-bar p{margin:0;max-width:640px;font-size:16px}
+.offer-bar .btn{flex:none}
+.pkg-custom{margin:28px auto 0;max-width:720px;text-align:center;font-size:18px;color:var(--ink-2)}
+.pkg-note{margin-top:10px;text-align:center;font-size:14px}
+@media (max-width:760px){.offer-bar{flex-direction:column;align-items:flex-start;padding:26px 24px}}

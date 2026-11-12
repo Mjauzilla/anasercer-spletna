@@ -249,7 +249,7 @@ main>section>.wrap,.site-footer>.wrap,.results-band>.wrap,.hero-inner,.logos{pos
 .ba.scrolled .ba-hint{opacity:0}
 .ba-range{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 .ba-range:focus-visible~.ba-knob,.ba:focus-within .ba-knob{outline:3px solid var(--spruce);outline-offset:3px}
-.ba-cap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;max-width:1120px;margin:22px auto 0;color:var(--mahogany)}
+.ba-cap{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;max-width:1120px;margin:22px auto 0;color:var(--mahogany)}
 .ba-cap .mono{color:var(--gold)}
 .ba-points{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1120px;margin:28px auto 0}
 .ba-points div{border-top:2px solid var(--amber);padding-top:16px;text-align:center;color:var(--mahogany)}

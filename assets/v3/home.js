@@ -76,3 +76,8 @@
     b.addEventListener('mouseleave',function(){b.style.transform=''});
   });
 })();
+/* before/after slider */
+(function(){document.querySelectorAll('.ba').forEach(function(ba){var r=ba.querySelector('input');if(!r)return;
+function set(v){ba.style.setProperty('--p',v+'%')}r.addEventListener('input',function(){set(r.value);ba.dataset.t=1});
+if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var io=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;io.disconnect();
+var t0=performance.now();(function f(t){if(ba.dataset.t)return;var k=Math.min((t-t0)/1800,1);var v=50+Math.sin(k*Math.PI*2)*22*(1-k*.3);if(k>=1)v=50;r.value=v;set(v);if(k<1)requestAnimationFrame(f)})(t0)},{threshold:.5});io.observe(ba)}})})();

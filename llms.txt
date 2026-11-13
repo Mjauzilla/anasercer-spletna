@@ -35,6 +35,9 @@ Ana Šercer je freelancerka za digitalni marketing iz Ljubljane. Malim podjetjem
 - [7 načinov, kako malo podjetje lahko uporablja AI v marketingu](https://anasercer.com/si/ai-v-marketingu-malega-podjetja): Vsebine, vizuali, video, avtomatizacije in analitika, s konkretnimi orodji.
 - [SpinaliS: kako smo v enem dnevu prišli do priporočila v ChatGPT](https://anasercer.com/si/spinalis-priporocilo-v-chatgpt): Študija primera: od nevidnosti do priporočila v ChatGPT v enem dnevu.
 - [Koliko stane spletna stran v Sloveniji (2026)](https://anasercer.com/si/koliko-stane-spletna-stran): Kaj vpliva na ceno, skriti stroški in kaj mora imeti dobra stran.
+- [Koliko stane oglaševanje na Facebooku in Instagramu za malo podjetje](https://anasercer.com/si/koliko-stane-oglasevanje-na-facebooku-in-instagramu): Proračun za oglase, upravljanje in koliko denarja za začetek.
+- [Kako se pojaviti na Google zemljevidu: Google Business profil za malo podjetje](https://anasercer.com/si/kako-se-pojaviti-na-google-zemljevidu): Brezplačen Google Business profil korak za korakom, z ocenami in pogostimi napakami.
+- [Kaj mora imeti spletna stran malega podjetja: kontrolni seznam](https://anasercer.com/si/kaj-mora-imeti-spletna-stran-malega-podjetja): Kontrolni seznam, s katerim v 10 minutah preverite svojo spletno stran.
 
 ## Contact
 - Email: anasercer@gmail.com

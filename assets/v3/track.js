@@ -40,6 +40,11 @@
     p.textContent = sl
       ? 'Stran uporablja piškotke za merjenje obiska in oglasov. Dovolite?'
       : 'This site uses cookies to measure visits and ads. Is that OK?';
+    var more = document.createElement('a');
+    more.href = sl ? '/si/zasebnost' : '/privacy';
+    more.textContent = sl ? 'Več' : 'More';
+    more.style.cssText = 'color:#3A4A2E;margin-left:6px';
+    p.appendChild(document.createTextNode(' ')); p.appendChild(more);
     var yes = document.createElement('button');
     yes.textContent = sl ? 'Dovolim' : 'Allow';
     yes.style.cssText = 'background:#E85D3F;color:#2E2A24;border:0;border-radius:999px;padding:11px 20px;font:600 15px Geist,system-ui,sans-serif;cursor:pointer';
@@ -51,6 +56,14 @@
     b.appendChild(p); b.appendChild(yes); b.appendChild(no);
     document.body.appendChild(b);
   }
+  document.addEventListener('click', function (e) {
+    var r = e.target.closest && e.target.closest('[data-consent-reset]');
+    if (!r) return;
+    e.preventDefault();
+    try { localStorage.removeItem(KEY); } catch (err) {}
+    if (pixelOn) { location.reload(); return; }
+    banner();
+  });
   var c = store.get();
   if (c === 'yes') loadPixel();
   else if (c !== 'no') {

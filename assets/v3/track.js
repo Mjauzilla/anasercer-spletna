@@ -1,0 +1,90 @@
+/* Consent, Meta pixel and Calendly booking tracking for anasercer.com */
+(function () {
+  var PIXEL = '4580454005531022';
+  var KEY = 'as-consent';
+  var sl = (document.documentElement.lang || 'sl').toLowerCase().indexOf('sl') === 0;
+  var store = {
+    get: function () { try { return localStorage.getItem(KEY); } catch (e) { return null; } },
+    set: function (v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  };
+  var queued = [];
+  var pixelOn = false;
+
+  function track(kind, name, data) {
+    if (pixelOn && window.fbq) { window.fbq(kind, name, data || {}); }
+    else { queued.push([kind, name, data]); }
+  }
+
+  function loadPixel() {
+    if (pixelOn) return;
+    pixelOn = true;
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+      t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    window.fbq('init', PIXEL);
+    window.fbq('track', 'PageView');
+    queued.forEach(function (q) { window.fbq(q[0], q[1], q[2] || {}); });
+    queued = [];
+  }
+
+  /* ---- consent banner ---- */
+  function banner() {
+    var b = document.createElement('div');
+    b.setAttribute('role', 'dialog');
+    b.setAttribute('aria-label', sl ? 'Piškotki' : 'Cookies');
+    b.style.cssText = 'position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#fff;color:#2E2A24;border-radius:18px;padding:18px 20px;box-shadow:0 20px 60px -20px rgba(0,0,0,.45);font:15px/1.45 Geist,system-ui,sans-serif;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px';
+    var p = document.createElement('p');
+    p.style.cssText = 'margin:0;flex:1 1 260px';
+    p.textContent = sl
+      ? 'Stran uporablja piškotke za merjenje obiska in oglasov. Dovolite?'
+      : 'This site uses cookies to measure visits and ads. Is that OK?';
+    var yes = document.createElement('button');
+    yes.textContent = sl ? 'Dovolim' : 'Allow';
+    yes.style.cssText = 'background:#E85D3F;color:#2E2A24;border:0;border-radius:999px;padding:11px 20px;font:600 15px Geist,system-ui,sans-serif;cursor:pointer';
+    var no = document.createElement('button');
+    no.textContent = sl ? 'Ne, hvala' : 'No, thanks';
+    no.style.cssText = 'background:transparent;color:#3A4A2E;border:1.5px solid #3A4A2E;border-radius:999px;padding:10px 18px;font:600 15px Geist,system-ui,sans-serif;cursor:pointer';
+    yes.onclick = function () { store.set('yes'); b.remove(); loadPixel(); };
+    no.onclick = function () { store.set('no'); b.remove(); };
+    b.appendChild(p); b.appendChild(yes); b.appendChild(no);
+    document.body.appendChild(b);
+  }
+  var c = store.get();
+  if (c === 'yes') loadPixel();
+  else if (c !== 'no') {
+    if (document.body) banner(); else document.addEventListener('DOMContentLoaded', banner);
+  }
+
+  /* ---- Calendly opens as a window on this page, so bookings can be counted ---- */
+  var calReady = false, calLoading = false, pending = null;
+  function loadCalendly(cb) {
+    if (calReady) return cb();
+    pending = cb;
+    if (calLoading) return;
+    calLoading = true;
+    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://assets.calendly.com/assets/external/widget.css'; document.head.appendChild(l);
+    var s = document.createElement('script'); s.src = 'https://assets.calendly.com/assets/external/widget.js'; s.async = true;
+    s.onload = function () { calReady = true; if (pending) pending(); };
+    s.onerror = function () { calLoading = false; if (pending) pending(true); };
+    document.head.appendChild(s);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="calendly.com"]');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    e.preventDefault();
+    var url = a.href;
+    track('track', 'Contact', { content_name: 'calendly_open' });
+    loadCalendly(function (failed) {
+      if (failed || !window.Calendly) { window.open(url, '_blank', 'noopener'); return; }
+      window.Calendly.initPopupWidget({ url: url + (url.indexOf('?') < 0 ? '?' : '&') + 'hide_gdpr_banner=1' });
+    });
+  });
+  window.addEventListener('message', function (e) {
+    if (!e.origin || e.origin.indexOf('calendly.com') < 0) return;
+    if (e.data && e.data.event === 'calendly.event_scheduled') {
+      track('track', 'Schedule', { content_name: 'discovery_call' });
+    }
+  });
+})();

@@ -110,3 +110,7 @@ function full(on){mm.classList.toggle('is-full',on);document.body.classList.togg
 if(fb)fb.addEventListener('click',function(){full(!mm.classList.contains('is-full'))});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mm.classList.contains('is-full'))full(false)});
 });})();
+
+(function(){var v=document.querySelector('.case2-view.live');if(!v)return;var f=v.querySelector('iframe');
+function go(){if(!f.src){f.addEventListener('load',function(){v.classList.add('ready')});f.src=f.getAttribute('data-src');}}
+if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){go();o.disconnect();}},{rootMargin:'600px'});o.observe(v);}else go();})();

@@ -302,3 +302,17 @@ main>section>.wrap,.site-footer>.wrap,.results-band>.wrap,.hero-inner,.logos{pos
 .mm.is-full .mm-view{height:calc(100% - 55px)}
 body.mm-lock{overflow:hidden}
 @media(max-width:640px){.mm-url{display:none}.mm-bar{justify-content:space-between}.mm-view{height:74vh}.mm-tab{padding:7px 14px}}
+
+/* Mad Matcha: make the Prej/Potem switch obvious */
+.mm-tabs{padding:4px;gap:4px}
+.mm-tab{padding:10px 22px;font-size:15px}
+.mm-tab[data-v=prej]{position:relative;color:var(--spruce);background:#fff}
+.mm:not(.used) .mm-tab[data-v=prej]{animation:mmPulse 1.6s ease-out infinite}
+@keyframes mmPulse{0%{box-shadow:0 0 0 0 rgba(232,93,63,.75)}70%{box-shadow:0 0 0 12px rgba(232,93,63,0)}100%{box-shadow:0 0 0 0 rgba(232,93,63,0)}}
+.mm-tip{position:absolute;left:14px;top:calc(100% + 10px);z-index:4;background:var(--mahogany);color:#fff;border-radius:12px;padding:10px 14px;font:600 13px/1.2 Geist,system-ui,sans-serif;white-space:nowrap;pointer-events:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.4);animation:mmBob 1.4s ease-in-out infinite;transition:opacity .4s}
+.mm-tip:before{content:"";position:absolute;left:var(--tip-x,120px);top:-6px;width:12px;height:12px;background:var(--mahogany);transform:rotate(45deg)}
+@keyframes mmBob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+.mm.used .mm-tip{opacity:0}
+.mm-bar{position:relative}
+@media(prefers-reduced-motion:reduce){.mm:not(.used) .mm-tab[data-v=prej],.mm-tip{animation:none}}
+@media(max-width:640px){.mm-tab{padding:9px 16px;font-size:14px}.mm-tip{font-size:12px}}

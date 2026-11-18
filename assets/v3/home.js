@@ -95,3 +95,19 @@ var user=false,hover=false,vis=false,dir=1,last=0,pos=0;function stop(){user=tru
 v.addEventListener('mouseenter',function(){hover=true});v.addEventListener('mouseleave',function(){hover=false});
 new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:.3}).observe(v);
 (function f(t){var dt=last?Math.min(t-last,50):0;last=t;if(!user&&!hover&&vis){var max=v.scrollHeight-v.clientHeight;pos+=dir*dt*0.07;if(pos>=max){pos=max;dir=-1}if(pos<=0){pos=0;dir=1}v.scrollTop=pos}else{pos=v.scrollTop}requestAnimationFrame(f)})(0)})})();
+
+/* Mad Matcha live browser example */
+(function(){document.querySelectorAll('.mm').forEach(function(mm){
+var fr=mm.querySelector('iframe'),pot=mm.querySelector('.mm-potem'),url=mm.querySelector('.mm-url b'),fb=mm.querySelector('.mm-full');
+function load(){if(fr&&!fr.src){fr.src=fr.getAttribute('data-src');fr.addEventListener('load',function(){pot.classList.add('ready')});}}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){load();io.disconnect();}},{rootMargin:'600px'});io.observe(mm);}else load();
+mm.querySelectorAll('.mm-tab').forEach(function(t){t.addEventListener('click',function(){var v=t.getAttribute('data-v');
+mm.querySelectorAll('.mm-tab').forEach(function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
+mm.querySelectorAll('.mm-pane').forEach(function(p){p.classList.toggle('on',p.classList.contains('mm-'+v))});
+if(url)url.textContent=v==='prej'?'stara stran':'nova stran';mm.classList.add('used');});});
+mm.addEventListener('pointerenter',function(){setTimeout(function(){mm.classList.add('used')},2500)},{once:true});
+mm.addEventListener('touchstart',function(){mm.classList.add('used')},{once:true,passive:true});
+function full(on){mm.classList.toggle('is-full',on);document.body.classList.toggle('mm-lock',on);fb.textContent=on?'✕':'⤢';fb.setAttribute('aria-label',on?'Zapri':'Celozaslonski prikaz');}
+if(fb)fb.addEventListener('click',function(){full(!mm.classList.contains('is-full'))});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mm.classList.contains('is-full'))full(false)});
+});})();

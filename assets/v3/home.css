@@ -325,3 +325,6 @@ body.mm-lock{overflow:hidden}
 .case2-view.live .mm-hint{z-index:2}
 @media(max-width:900px){.case2-view.live{height:74vh}}
 .case2-view.live.ready picture{display:none}
+
+/* Zeleni element: render desktop layout scaled down */
+.case2-view.live.desk iframe{inset:0 auto auto 0;width:1366px;height:calc(100% / var(--zs,1));transform:scale(var(--zs,1));transform-origin:0 0}

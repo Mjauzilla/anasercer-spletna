@@ -112,5 +112,6 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mm.classLis
 });})();
 
 (function(){var v=document.querySelector('.case2-view.live');if(!v)return;var f=v.querySelector('iframe');
+function fit(){var w=v.clientWidth;if(w>=440){v.classList.add('desk');v.style.setProperty('--zs',(w/1366).toFixed(4));}else{v.classList.remove('desk');}}fit();addEventListener('resize',fit);
 function go(){if(!f.src){f.addEventListener('load',function(){v.classList.add('ready')});f.src=f.getAttribute('data-src');}}
 if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){go();o.disconnect();}},{rootMargin:'600px'});o.observe(v);}else go();})();

@@ -1,4 +1,4 @@
-/* Consent, Meta pixel, Google Ads conversions and Calendly booking tracking for anasercer.com */
+/* Consent, Meta pixel, Google Analytics, Google Ads conversions and Calendly booking tracking for anasercer.com */
 (function () {
   var PIXEL = '4580454005531022';
   var KEY = 'as-consent';
@@ -8,21 +8,25 @@
     set: function (v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
   };
   var GADS = 'AW-17799635646';
+  var GA4 = 'G-WQ9QZVHXFP';
+  var GA4EV = { Contact: 'booking_open', Schedule: 'booking_scheduled' };
   var GCONV = { Contact: GADS + '/eIhiCPv-4rodEL7Fw6dC', Schedule: GADS + '/p_tuCPj-4rodEL7Fw6dC' };
   var queued = [];
   var pixelOn = false;
 
   function gconv(name) {
     if (window.gtag && GCONV[name]) window.gtag('event', 'conversion', { send_to: GCONV[name], value: 1.0, currency: 'EUR' });
+    if (window.gtag && GA4EV[name]) window.gtag('event', GA4EV[name], { send_to: GA4 });
   }
   function loadGoogle() {
     if (window.gtag) return;
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
+    window.gtag('config', GA4);
     window.gtag('config', GADS);
     var g = document.createElement('script'); g.async = true;
-    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GADS;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4;
     document.head.appendChild(g);
   }
 

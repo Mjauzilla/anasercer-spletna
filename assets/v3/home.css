@@ -324,3 +324,4 @@ body.mm-lock{overflow:hidden}
 .case2-view.live.ready iframe{opacity:1}
 .case2-view.live .mm-hint{z-index:2}
 @media(max-width:900px){.case2-view.live{height:74vh}}
+.case2-view.live.ready picture{display:none}

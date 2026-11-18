@@ -104,7 +104,7 @@ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e)
 mm.querySelectorAll('.mm-tab').forEach(function(t){t.addEventListener('click',function(){var v=t.getAttribute('data-v');
 mm.querySelectorAll('.mm-tab').forEach(function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
 mm.querySelectorAll('.mm-pane').forEach(function(p){p.classList.toggle('on',p.classList.contains('mm-'+v))});
-if(url)url.textContent=v==='prej'?'stara stran':'nova stran';mm.classList.add('used');});});
+if(url)var en=(document.documentElement.lang||'').indexOf('en')===0;url.textContent=v==='prej'?(en?'old site':'stara stran'):(en?'new site':'nova stran');mm.classList.add('used');});});
 var tip=mm.querySelector('.mm-tip'),pt=mm.querySelector('.mm-tab[data-v=prej]');function placeTip(){if(tip&&pt)tip.style.setProperty('--tip-x',(pt.offsetLeft+pt.offsetWidth/2-20)+'px');}placeTip();addEventListener('resize',placeTip);
 function full(on){mm.classList.toggle('is-full',on);document.body.classList.toggle('mm-lock',on);fb.textContent=on?'✕':'⤢';fb.setAttribute('aria-label',on?'Zapri':'Celozaslonski prikaz');}
 if(fb)fb.addEventListener('click',function(){full(!mm.classList.contains('is-full'))});

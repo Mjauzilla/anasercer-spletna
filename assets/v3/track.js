@@ -11,6 +11,19 @@
   var GA4 = 'G-WQ9QZVHXFP';
   var GA4EV = { Contact: 'booking_open', Schedule: 'booking_scheduled' };
   var GCONV = { Contact: GADS + '/eIhiCPv-4rodEL7Fw6dC', Schedule: GADS + '/p_tuCPj-4rodEL7Fw6dC' };
+  /* Exclude Ana's own devices: open any page with ?jaz=1 once per browser (?jaz=0 undoes it) */
+  var me = false;
+  try {
+    var q = location.search.match(/[?&]jaz=([01])/);
+    if (q) { if (q[1] === '1') localStorage.setItem('as-me', '1'); else localStorage.removeItem('as-me'); }
+    me = localStorage.getItem('as-me') === '1';
+    if (q) setTimeout(function () {
+      var t = document.createElement('div');
+      t.textContent = me ? 'Ta brskalnik je izključen iz analitike.' : 'Ta brskalnik se spet šteje v analitiko.';
+      t.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:99999;background:#2E2A24;color:#fff;padding:12px 18px;border-radius:12px;font:600 14px/1.3 system-ui,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.3)';
+      document.body.appendChild(t); setTimeout(function () { t.remove(); }, 4000);
+    }, 300);
+  } catch (e) {}
   var queued = [];
   var pixelOn = false;
 
@@ -19,7 +32,7 @@
     if (window.gtag && GA4EV[name]) window.gtag('event', GA4EV[name], { send_to: GA4 });
   }
   function loadGoogle() {
-    if (window.gtag) return;
+    if (me || window.gtag) return;
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
@@ -36,6 +49,7 @@
   }
 
   function loadPixel() {
+    if (me) return;
     if (pixelOn) return;
     pixelOn = true;
     loadGoogle();

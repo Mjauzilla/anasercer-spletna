@@ -1,4 +1,4 @@
-/* Consent, Meta pixel and Calendly booking tracking for anasercer.com */
+/* Consent, Meta pixel, Google Ads conversions and Calendly booking tracking for anasercer.com */
 (function () {
   var PIXEL = '4580454005531022';
   var KEY = 'as-consent';
@@ -7,17 +7,34 @@
     get: function () { try { return localStorage.getItem(KEY); } catch (e) { return null; } },
     set: function (v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
   };
+  var GADS = 'AW-17799635646';
+  var GCONV = { Contact: GADS + '/eIhiCPv-4rodEL7Fw6dC', Schedule: GADS + '/p_tuCPj-4rodEL7Fw6dC' };
   var queued = [];
   var pixelOn = false;
 
+  function gconv(name) {
+    if (window.gtag && GCONV[name]) window.gtag('event', 'conversion', { send_to: GCONV[name], value: 1.0, currency: 'EUR' });
+  }
+  function loadGoogle() {
+    if (window.gtag) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GADS);
+    var g = document.createElement('script'); g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GADS;
+    document.head.appendChild(g);
+  }
+
   function track(kind, name, data) {
-    if (pixelOn && window.fbq) { window.fbq(kind, name, data || {}); }
+    if (pixelOn && window.fbq) { window.fbq(kind, name, data || {}); gconv(name); }
     else { queued.push([kind, name, data]); }
   }
 
   function loadPixel() {
     if (pixelOn) return;
     pixelOn = true;
+    loadGoogle();
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
@@ -25,7 +42,7 @@
     }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
     window.fbq('init', PIXEL);
     window.fbq('track', 'PageView');
-    queued.forEach(function (q) { window.fbq(q[0], q[1], q[2] || {}); });
+    queued.forEach(function (q) { window.fbq(q[0], q[1], q[2] || {}); gconv(q[1]); });
     queued = [];
   }
 

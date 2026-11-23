@@ -1,5 +1,14 @@
 # SEO / GEO log (anasercer.com)
 
+## STANDING RULES FOR EVERY RUN (agreed with Ana, 23 Nov 2026). Read these first.
+1. Numbers before anything else. Open Search Console (queries, pages, page indexing, Generative AI features report) and Bing Webmaster (Search Performance, AI Performance) in Ana's Chrome. If Chrome is not available, say so at the top of the report and do not pick topics or write guides blind.
+2. Blog topics come from the Search Console queries: pick queries that already have impressions but rank too low to get clicks, and group them into a topic. Never take topics from a generic idea list. Name the queries and their numbers next to each planned post.
+3. Two new posts per week, SEO and GEO optimised (direct answer lead, question headings, FAQ schema, prices and concrete facts). Plan next week's two at the end of each run.
+4. AI answer check every week: ask the same service questions in ChatGPT and Perplexity three times each, record how often Ana is named, who is named instead and which sources the answer used. State the exact conditions (logged in or out, language, wording).
+5. Every report ends with Proposals: concrete steps to improve the position, ordered by priority, each marked as "I do" or "Ana does". Then work through them one at a time in that order.
+6. Go through the TO-DO for Ana list at the bottom and report what is still open.
+7. No em dashes in anything Ana will send on. Deliverables are written out in the chat.
+
 ## 2026-11-23 (first logged weekly run)
 - Numbers (measured in the third run of the day, from Ana's Chrome, this is the baseline):
   - Google Search Console, last 28 days: 10 clicks, 248 impressions, CTR 4%, average position 41.6. The 3 month view is identical, because GSC only has data from 8 Nov 2026 (latest day 21 Nov).

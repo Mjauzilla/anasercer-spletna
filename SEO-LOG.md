@@ -53,6 +53,12 @@
 - GEO step 3 (same day): all Slovenian service pages already had a "Kdo ..." FAQ and freelancer wording. Gap was in the "who" answers of six pages that never said "freelance": website-development, meta-advertising, ai-marketing, seo-optimisation (EN) and si/izdelava-spletnih-strani, si/meta-oglasevanje. Added "a freelance digital marketer" / "freelancerka za digitalni marketing" to those answers, on the page and in the FAQ schema.
 - LinkedIn (Ana, same day): headline and About rewritten. Headline without a place (Ana does not want to limit herself to Ljubljana or a country), About says based in Ljubljana, remote clients in Slovenia and abroad.
 
+- Search Console, Generative AI features report (beta), 28 days, checked 23 Nov evening: 6 impressions in Google's AI features. Pages: /about 3, / 2, /si/ 2. No guide or service page appears there yet. The report has no queries tab. Check it in every weekly run.
+- Blog topics must come from Search Console queries, not from a generic idea list (agreed with Ana 23 Nov). Planned for the run of 30 Nov, replacing the earlier ideas (WordPress, speed, mobile):
+  1. "Instagram oglaševanje: cena in cenik" as its own guide. Queries: "instagram oglaševanje" 15 impr / pos 37.6, "instagram oglaševanje cenik" 8 / 53.8, "oglaševanje na instagramu" 5 / 40.6, "reklamiranje na instagramu cena" 2 / 29.5. Today they all land on the combined Facebook/Instagram guide.
+  2. "Koliko stane SEO optimizacija v Sloveniji". Queries: "seo slovenija" 10 / 69.1, "seo ljubljana" 6 / 82.0, "seo optimizacija maribor" 10 / 52.1 plus the English "seo agency/services/company" variants (about 20 impr together). Price guides are the pattern that already earns the most impressions on this site.
+  Reserve: "Optimizacija za ChatGPT: kako začeti" ("geo optimizacija za chatgpt" 4 / 64.5, "optimizacija za chatgpt" 3 / 49.3).
+
 ## TO-DO for Ana (parked, bring up in each weekly run until done)
 - [ ] Ask three past clients for LinkedIn recommendations, one per service (social media, website, SEO or GEO). Ask them to name the service and the result. Message templates in SL and EN were written out in the chat on 23 Nov 2026. Parked by Ana on 23 Nov: she does not want to ask for more favours right now.
 - [ ] Google Business Profile video verification (needs a phone with a working camera).

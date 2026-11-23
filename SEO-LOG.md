@@ -50,3 +50,12 @@
 - Photo fix, site side: Person schema image is now an ImageObject with caption (home pages, o-meni, about), ProfilePage schema and descriptive alt text on o-meni and about, image entries in both sitemaps.
 - GEO proposals: (1) verify Google Business Profile and collect reviews, ChatGPT's lists lean on Google listings with ratings. (2) The site says "Top 2 v ChatGPT" and "na 2. mestu" on si/geo-optimizacija: today's neutral tests do not reproduce it, date the claim or re-word it. (3) Get listed where the answers take names from: sorank.com list, Spejevc.si, Malt/Toptal style profiles, LinkedIn headline with "freelancer za digitalni marketing, Ljubljana". (4) External article. (5) Repeat this AI check in every weekly run with the same questions, so the trend is visible.
 - Correction to the AI check above: Ana reports that she asked ChatGPT in an incognito window on 23 Nov as well and was on the list. So the result is inconsistent between runs, not "absent". The 0 of 8 is from one run per question, in her logged-in account with temporary chat set to Unpersonalized. From next run: ask each question 3 times and record how many times she is named, and note the exact conditions (logged in or out, language, wording).
+- GEO step 3 (same day): all Slovenian service pages already had a "Kdo ..." FAQ and freelancer wording. Gap was in the "who" answers of six pages that never said "freelance": website-development, meta-advertising, ai-marketing, seo-optimisation (EN) and si/izdelava-spletnih-strani, si/meta-oglasevanje. Added "a freelance digital marketer" / "freelancerka za digitalni marketing" to those answers, on the page and in the FAQ schema.
+- LinkedIn (Ana, same day): headline and About rewritten. Headline without a place (Ana does not want to limit herself to Ljubljana or a country), About says based in Ljubljana, remote clients in Slovenia and abroad.
+
+## TO-DO for Ana (parked, bring up in each weekly run until done)
+- [ ] Ask three past clients for LinkedIn recommendations, one per service (social media, website, SEO or GEO). Ask them to name the service and the result. Message templates in SL and EN were written out in the chat on 23 Nov 2026. Parked by Ana on 23 Nov: she does not want to ask for more favours right now.
+- [ ] Google Business Profile video verification (needs a phone with a working camera).
+- [ ] Bing Places: enter the verification code when it arrives by post.
+- [ ] Apple Business: wait for the review result.
+- [ ] Confirm whether the TSmedia form (Bizi, Najdi.si, TIS) was sent.

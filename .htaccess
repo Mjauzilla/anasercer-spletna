@@ -8,6 +8,7 @@ RewriteRule ^ https://anasercer.com%{REQUEST_URI} [R=301,L]
 # old theme demo pages and the /new/ staging copy go to the live pages
 RewriteRule ^index-(?:[0-9]+-)?white\.html$ / [R=301,L]
 RewriteRule ^index-[0-9]+\.html$ / [R=301,L]
+RewriteRule ^project-details(?:\.html)?$ / [R=301,L]
 RewriteRule ^new/?(.*)$ /$1 [R=301,L]
 # serve /page as /page.html
 RewriteCond %{REQUEST_FILENAME} !-d

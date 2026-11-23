@@ -59,3 +59,9 @@
 - [ ] Bing Places: enter the verification code when it arrives by post.
 - [ ] Apple Business: wait for the review result.
 - [ ] Confirm whether the TSmedia form (Bizi, Najdi.si, TIS) was sent.
+- [ ] Create a profile on Spejevc.si (free portal for s.p., website work sits under "IT in programiranje" and "Oblikovanje in kreativa"). Profile text written out in the chat on 23 Nov 2026.
+- [ ] Create a profile on Malt, if Slovenia is accepted at sign-up (needs the registered s.p.). Same English text as LinkedIn.
+- [ ] Upwork: switch on the setting that makes the profile findable by full name in search engines (the profile itself only shows "Ana Š.").
+- [ ] Pitch the external article "Kako sem prišla med priporočila ChatGPT" (full text in the chat, 23 Nov 2026), first choice Računalniške novice.
+- Dropped: asking sorank.com for a listing. It is an SEO/GEO software tool, not a list of freelancers; ChatGPT only cited it as a source.
+- Fiverr: not planned for GEO, it was not among the sources the AI answers used.

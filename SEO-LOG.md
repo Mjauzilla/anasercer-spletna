@@ -84,7 +84,7 @@
 - [ ] Bing Places: enter the verification code when it arrives by post.
 - [ ] Apple Business: wait for the review result.
 - [ ] Confirm whether the TSmedia form (Bizi, Najdi.si, TIS) was sent.
-- [ ] Create a profile on Spejevc.si (free portal for s.p., website work sits under "IT in programiranje" and "Oblikovanje in kreativa"). Profile text written out in the chat on 23 Nov 2026.
+- [x] DONE 24 Nov 2026 (Claude, signed up with Google as anasercer@gmail.com, listed in the directory: Marketing in oglaševanje, IT in programiranje, Oblikovanje in kreativa, Fotografija in video; Ljubljana z okolico, Na daljavo, Vsa Slovenija; no public email). Was: Create a profile on Spejevc.si (free portal for s.p., website work sits under "IT in programiranje" and "Oblikovanje in kreativa"). Profile text written out in the chat on 23 Nov 2026.
 - [ ] Create a profile on Malt, if Slovenia is accepted at sign-up (needs the registered s.p.). Same English text as LinkedIn.
 - [ ] Upwork: switch on the setting that makes the profile findable by full name in search engines (the profile itself only shows "Ana Š.").
 - [ ] Pitch the external article "Kako sem prišla med priporočila ChatGPT" (full text in the chat, 23 Nov 2026), first choice Računalniške novice.

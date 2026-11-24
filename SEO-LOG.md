@@ -9,6 +9,16 @@
 6. Go through the TO-DO for Ana list at the bottom and report what is still open.
 7. No em dashes in anything Ana will send on. Deliverables are written out in the chat.
 
+## 2026-11-24 (extra, website keywords: "poceni / ugodna spletna stran", Ljubljana)
+- Why: Google Ads clicks for the main website terms cost 3 € or more, Meta brought no leads, so Ana wants organic reach for website-making searches.
+- SERP check for "poceni izdelava spletnih strani": mostly old slo-tech forum threads plus data.si (from 599 € before VAT). Weak competition, winnable.
+- New pages: si/ugodna-spletna-stran (targets: poceni spletna stran, ugodna izdelava spletnih strani, poceni izdelava spletnih strani) and si/izdelava-spletnih-strani-ljubljana (target: izdelava spletnih strani ljubljana). Both with Mad Matcha and Zeleni element examples, Vanja's video, price cards, 6 FAQs, Service + Offer + FAQ schema.
+- si/izdelava-spletnih-strani: H1 now contains "Izdelava spletnih strani"; new FAQ "Koliko stane najcenejša spletna stran?"; links to both new pages.
+- "Cene so orientacijske" replaced with "Cene so končne" on si/izdelava-spletnih-strani and si/koliko-stane-spletna-stran (Ana's rule: prices are final).
+- llms.txt and both sitemaps updated.
+- Add to the weekly AI check from now on (3 times each, ChatGPT and Perplexity): "Kdo naredi poceni spletno stran v Ljubljani?", "Ugodna izdelava spletnih strani za malo podjetje", "Izdelava spletnih strani Ljubljana, priporočilo".
+- Watch in Search Console: impressions for the two new URLs and the queries poceni/ugodna spletna stran, izdelava spletnih strani ljubljana.
+
 ## 2026-11-23 (first logged weekly run)
 - Numbers (measured in the third run of the day, from Ana's Chrome, this is the baseline):
   - Google Search Console, last 28 days: 10 clicks, 248 impressions, CTR 4%, average position 41.6. The 3 month view is identical, because GSC only has data from 8 Nov 2026 (latest day 21 Nov).

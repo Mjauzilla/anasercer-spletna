@@ -90,6 +90,14 @@
   - Photo next to her name in EN run 3 is labelled "SEMPL - Speakers - Ana Ribar": wrong person again. Photo problem not solved.
   - Compared with 23 Nov (same two questions, 0 of 2): the position changed within two days. Cause unknown. Changes made on 23 Nov: "freelance" wording in who-answers, LinkedIn headline and About, image markup. Do not claim cause.
 
+- 25 Nov 2026, same check LOGGED OUT (ChatGPT in the Claude desktop app's built-in browser, no account, so equal to incognito). Use this method for the weekly check from now on, it is the cleanest.
+  - EN digital marketing freelancers in Ljubljana x2: Ana 1st in both ("Best all-round freelancer"). Others: Aleš Prijatelj (2x), Stefan Petrićević and Dejan Travnikar (Toptal, run 1), Klemen Kveder (run 2).
+  - SL "Kdo je dober freelancer za digitalni marketing v Ljubljani?" x2: Ana 1st in both. Others: Ana Banovac (Malt), Sandra Rozman (LinkedIn), Aleš Prijatelj (run 1); Jure Ule, Marta Namačinski, Ana Banovac (run 2).
+  - SL website for a small business x1: Ana 1st ("moja prva izbira za manjši proračun"), quotes her packages 300, 550 and 900 €. Others: Ajda Zajc, Tim Blažič (STRUO), Rok Bečan (Webless).
+  - SL social media freelancer x1: Ana NOT named. Named: Eva Kostevc (Nisem agencija), Asja (Digitala), Magic Marketing. This is the gap.
+  - Photo: wrong in 3 of 5 answers that named her (twice a photo labelled "SEMPL - Speakers - Ana Ribar", once a stock photo "Young successful interior designer in her home office"), empty grey box in the other 2. Never her own photo.
+  - Day total for the digital marketing question, logged in and logged out: named 9 of 9, always 1st.
+
 ## TO-DO for Ana (parked, bring up in each weekly run until done)
 - [ ] Ask three past clients for LinkedIn recommendations, one per service (social media, website, SEO or GEO). Ask them to name the service and the result. Message templates in SL and EN were written out in the chat on 23 Nov 2026. Parked by Ana on 23 Nov: she does not want to ask for more favours right now.
 - [ ] Google Business Profile video verification (needs a phone with a working camera).

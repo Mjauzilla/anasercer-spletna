@@ -83,6 +83,13 @@
 - 25 Nov 2026, mid-week check asked by Ana. Search Console 28 days (data to 23 Nov): 11 clicks, 323 impressions, CTR 3.4%, position 41.5, 46 queries. Links report baseline: 28 external links from 3 sites, of which zelenielement.si 24 (all to /si/), 2ip.io 3 and 2ip.ru 1 (tool sites, no value). So one real linking site. Internal links 107. A client called Ana on 25 Nov saying he found her on ChatGPT: the exact question he asked is not known yet.
 - Decision 25 Nov: keep the on-site run weekly, more runs would not move anything because Search Console data lags 2 to 3 days and changes take weeks to show. The gap is links and mentions, see rules 8 and 9.
 
+- 25 Nov 2026, AI answer check rerun (ChatGPT in Ana's Chrome, logged in, temporary chat, Unpersonalized; one run each, separate chats). Ana named 5 of 5, position 1 every time.
+  - EN "Who are the best digital marketing freelancers in Ljubljana?" x3: Ana 1st in all three ("Best all-round freelancer"). Also named: Aleš Prijatelj (3x), Stefan Petrićević (3x, Toptal), Dejan Travnikar (2x, Toptal), agencies vary.
+  - SL "Kdo je dober freelancer za digitalni marketing v Ljubljani?" x2: Ana 1st in both. Also named: Aleš Prijatelj SEO, Karmen Žirovnik (run 1); Jure Ule, Marta Namačinski (LinkedIn), Dragan K. (Upwork) (run 2).
+  - What ChatGPT says about Ana comes from anasercer.com: 8+ years, SEO, Google and Meta ads, social media, websites, GEO, part-time for small businesses, "published packages from €750/month", testimonials and case studies.
+  - Photo next to her name in EN run 3 is labelled "SEMPL - Speakers - Ana Ribar": wrong person again. Photo problem not solved.
+  - Compared with 23 Nov (same two questions, 0 of 2): the position changed within two days. Cause unknown. Changes made on 23 Nov: "freelance" wording in who-answers, LinkedIn headline and About, image markup. Do not claim cause.
+
 ## TO-DO for Ana (parked, bring up in each weekly run until done)
 - [ ] Ask three past clients for LinkedIn recommendations, one per service (social media, website, SEO or GEO). Ask them to name the service and the result. Message templates in SL and EN were written out in the chat on 23 Nov 2026. Parked by Ana on 23 Nov: she does not want to ask for more favours right now.
 - [ ] Google Business Profile video verification (needs a phone with a working camera).

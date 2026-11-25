@@ -8,6 +8,8 @@
 5. Every report ends with Proposals: concrete steps to improve the position, ordered by priority, each marked as "I do" or "Ana does". Then work through them one at a time in that order.
 6. Go through the TO-DO for Ana list at the bottom and report what is still open.
 7. No em dashes in anything Ana will send on. Deliverables are written out in the chat.
+8. Links and mentions are a weekly track (added 25 Nov 2026). Open the Search Console Links report every run and log total external links and linking sites. Propose ONE link or mention action per week, the easiest real one first: a footer credit on a website Ana built, a directory, a profile, a guest article. Never buy links.
+9. Protect the ChatGPT position (added 25 Nov 2026): when a client says they found Ana through an AI assistant, log the date and the exact question they asked, and add that question to the weekly AI answer check.
 
 ## 2026-11-24 (extra, website keywords: "poceni / ugodna spletna stran", Ljubljana)
 - Why: Google Ads clicks for the main website terms cost 3 € or more, Meta brought no leads, so Ana wants organic reach for website-making searches.
@@ -78,6 +80,9 @@
   2. "Koliko stane SEO optimizacija v Sloveniji". Queries: "seo slovenija" 10 / 69.1, "seo ljubljana" 6 / 82.0, "seo optimizacija maribor" 10 / 52.1 plus the English "seo agency/services/company" variants (about 20 impr together). Price guides are the pattern that already earns the most impressions on this site.
   Reserve: "Optimizacija za ChatGPT: kako začeti" ("geo optimizacija za chatgpt" 4 / 64.5, "optimizacija za chatgpt" 3 / 49.3).
 
+- 25 Nov 2026, mid-week check asked by Ana. Search Console 28 days (data to 23 Nov): 11 clicks, 323 impressions, CTR 3.4%, position 41.5, 46 queries. Links report baseline: 28 external links from 3 sites, of which zelenielement.si 24 (all to /si/), 2ip.io 3 and 2ip.ru 1 (tool sites, no value). So one real linking site. Internal links 107. A client called Ana on 25 Nov saying he found her on ChatGPT: the exact question he asked is not known yet.
+- Decision 25 Nov: keep the on-site run weekly, more runs would not move anything because Search Console data lags 2 to 3 days and changes take weeks to show. The gap is links and mentions, see rules 8 and 9.
+
 ## TO-DO for Ana (parked, bring up in each weekly run until done)
 - [ ] Ask three past clients for LinkedIn recommendations, one per service (social media, website, SEO or GEO). Ask them to name the service and the result. Message templates in SL and EN were written out in the chat on 23 Nov 2026. Parked by Ana on 23 Nov: she does not want to ask for more favours right now.
 - [ ] Google Business Profile video verification (needs a phone with a working camera).
@@ -90,3 +95,5 @@
 - [ ] Pitch the external article "Kako sem prišla med priporočila ChatGPT" (full text in the chat, 23 Nov 2026), first choice Računalniške novice.
 - Dropped: asking sorank.com for a listing. It is an SEO/GEO software tool, not a list of freelancers; ChatGPT only cited it as a source.
 - Fiverr: not planned for GEO, it was not among the sources the AI answers used.
+- [ ] Ask the client who called on 25 Nov which question he typed into ChatGPT, and which assistant it was.
+- [ ] Add a footer credit with a link to anasercer.com on every website Ana builds, with the client's agreement (Zeleni element already has one).

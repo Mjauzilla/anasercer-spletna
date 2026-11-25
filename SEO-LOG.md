@@ -98,6 +98,11 @@
   - Photo: wrong in 3 of 5 answers that named her (twice a photo labelled "SEMPL - Speakers - Ana Ribar", once a stock photo "Young successful interior designer in her home office"), empty grey box in the other 2. Never her own photo.
   - Day total for the digital marketing question, logged in and logged out: named 9 of 9, always 1st.
 
+- PRIORITIES FOR THE RUN OF 30 NOV (set with Ana on 25 Nov, do these before the two planned guides):
+  1. Photo. ChatGPT lists Ana first but never with her own photo (another woman's photo or a grey box). Check where her photo is published under her full name: site image markup (done 23 Nov), LinkedIn profile photo and its public visibility, Google Business Profile photo, Bing Places, company page. Check Bing image search for "Ana Šercer" and Google Images, note what comes up, and propose fixes. Ask Ana for one clear portrait to use everywhere under the file name ana-sercer.
+  2. Social media gap. For "Kdo lahko vodi družbena omrežja za malo podjetje v Sloveniji?" ChatGPT names Nisem agencija, Digitala and Magic Marketing, not Ana. Compare their pages with si/druzbena-omrezja and social-media.html (public packages, "za mala podjetja", examples, who-answer) and close the gaps. Write one guide for this service as one of the week's two posts, for example "Koliko stane vodenje družbenih omrežij v Sloveniji", even though Search Console has no queries for it yet: the AI answer check is the data here. Then the Instagram ads guide as the second post. The SEO price guide moves to the week after.
+  3. Add the social media question to the list of services where Ana is NOT yet named and track it weekly until she is.
+
 ## TO-DO for Ana (parked, bring up in each weekly run until done)
 - [ ] Ask three past clients for LinkedIn recommendations, one per service (social media, website, SEO or GEO). Ask them to name the service and the result. Message templates in SL and EN were written out in the chat on 23 Nov 2026. Parked by Ana on 23 Nov: she does not want to ask for more favours right now.
 - [ ] Google Business Profile video verification (needs a phone with a working camera).

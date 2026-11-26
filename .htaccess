@@ -1,10 +1,21 @@
+# === TEST SITE ONLY (test.anasercer.com). Remove this block and restore the
+# === anasercer.com redirect below before merging into main.
+<IfModule mod_headers.c>
+Header always set X-Robots-Tag "noindex, nofollow, noarchive"
+</IfModule>
+AuthType Basic
+AuthName "anasercer test"
+AuthUserFile "/home/anaser76/.htpasswds/test.anasercer.com/passwd"
+Require valid-user
+# === END TEST SITE ONLY
+
 Options -MultiViews
 RewriteEngine On
 # force https + no www (skip SSL validation files)
 RewriteCond %{REQUEST_URI} !^/\.well-known/
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^ https://anasercer.com%{REQUEST_URI} [R=301,L]
+RewriteRule ^ https://test.anasercer.com%{REQUEST_URI} [R=301,L]
 # old theme demo pages and the /new/ staging copy go to the live pages
 RewriteRule ^index-(?:[0-9]+-)?white\.html$ / [R=301,L]
 RewriteRule ^index-[0-9]+\.html$ / [R=301,L]

@@ -333,3 +333,12 @@ body.mm-lock{overflow:hidden}
 .case2.wide .case2-txt ul{grid-template-columns:repeat(3,1fr);gap:24px;text-align:left;max-width:1000px;margin:0 auto 22px}
 .case2.wide .case2-view.live{height:min(680px,72vh)}
 @media(max-width:900px){.case2.wide .case2-txt ul{grid-template-columns:1fr}.case2.wide .case2-view.live{height:74vh}}
+/* about: story block */
+.story{max-width:760px;margin:0 auto;text-align:center}
+.story .lead{max-width:none;margin:0 0 24px}
+.story .lead:last-child{margin-bottom:0}
+/* about: featured experience card, video testimonial in references */
+.rows .row.wide{grid-column:span 2}
+@media (max-width:560px){.rows .row.wide{grid-column:auto}}
+.about-vt{margin:0 0 64px}
+.about-vt .quote{text-align:left}
